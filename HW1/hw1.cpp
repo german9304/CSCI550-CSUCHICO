@@ -36,13 +36,13 @@ using namespace std;
     for(int j=0;j<size;j++){
       vertex av;
       av.dist=200;
-      av.p=-1;
+      av.p=0;
       vert_arr.push_back(av);
     }
   int vert_size= vert_arr.size();
   queue<int> pq;
   vert_arr[source].dist=0;
-  vert_arr[source].p=-1;
+  vert_arr[source].p=0;
   pq.push(source);
   vector<bool> vertex_visited(vert_size,false);
   int vert= pq.front();
@@ -61,32 +61,9 @@ using namespace std;
   }
 }
 /*************
-@Brief
-This function prints the path from the facility to all the
-vertices
-*************/
-void print(vector<vertex> & vert_arr,int facility){
-    stack<int> mystack;
-    for(int index=0;index<vert_arr.size();index++){
-      if(index!=facility){
-        int i=index;
-        mystack.push(i);
-        while(i!=facility){
-          i=vert_arr[i].p;
-          mystack.push(i);
-        }
-        while (!mystack.empty()){
-          cout <<mystack.top() << " ";
-          mystack.pop();
-        }
-        cout << endl;
-      }
-    }
-}
-/*************
 @ Brief
 This function returns the middle vertex that has the shortes distance from
-the vertices, endpoints 
+the vertices, endpoints
 ***********/
 int coreFacility(vector<int> graph[],vector<vertex> & vert_arr,vector<int> & vc,int size){
     int v_index=0;
@@ -117,6 +94,36 @@ int coreFacility(vector<int> graph[],vector<vertex> & vert_arr,vector<int> & vc,
       }
       return facility;
 }
+/*************
+@ Brief
+This function returns the maximum vertex from endpoints
+***********/
+int max_v(vector<vertex> & vc){
+   int vertex_max=0;
+   int max=vc[0].dist;
+   for(int i=0;i<vc.size();i++){
+         if(max<vc[i].dist){
+           max=vc[i].dist;
+           vertex_max=i;
+         }
+   }
+   return vertex_max;
+
+}
+/*************
+@Brief
+This function recursively prints the path from the facility to all the
+vertices 0-N
+*************/
+void print(vector<vertex> & vert_arr,int index,int vert){
+        if(vert_arr[index].p==vert){
+               return;
+        }
+        index = vert_arr[index].p;
+        print(vert_arr,index,vert);
+        cout << index<< " ";
+}
+
 int main(int argc, const char * argv[])
 {
   int size;
@@ -130,11 +137,26 @@ int main(int argc, const char * argv[])
     cin>> v >> edge;
     addEdge(graph,v,edge);
   }
-  BFS(graph,0,size,vertex_array);
+   int min_endpoint=0;
+   int vertex_max=5;
+   for(int i=0;i<2;i++){
+   vertex_array.clear();
+   BFS(graph,vertex_max,size,vertex_array);
+   vertex_max = max_v(vertex_array);
+     if(vertex_max<=min_endpoint){
+        min_endpoint=vertex_max;
+     }
+   }
+  vertex_array.clear();
+  BFS(graph,min_endpoint,size,vertex_array);
   int facility= coreFacility(graph,vertex_array,vc,size);
   vertex_array.clear();
   BFS(graph,facility,size,vertex_array);
-  print(vertex_array,facility);
-
+  for(int i=0;i<vertex_array.size();i++){
+  if(i!=facility){
+  print(vertex_array,i,0);
+  cout << i <<" "<< endl;
+   }
+  }
    return 0;
 }
