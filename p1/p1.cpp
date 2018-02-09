@@ -1,3 +1,27 @@
+
+/*********************************************
+1. adjD is the answer: adjacency list containing
+selected edges, the max-weight of which you need to output
+
+2. On the way down of recursion
+adjD has the same number of vertices as orig graph, but
+adjacency lists are empty
+
+3. On the way up of recursion,
+adjD grows: we add original edges from the Smallest-half
+edges (not always, only in those recursive calls where
+graph over smallest-half edges was not connected)
+
+4. Initially, in adjA's vector is indexed by vertices of
+original graph, and for each edge (u, v),
+adjA[u] has v
+adjA[v] has u
+
+5. Initially, adjD's vector has the same size as
+the number of vertices in the original graph
+(and this does not change through the algorithm)
+***********************************************/
+
 #include<algorithm>
 #include<math.h>
 #include<vector>
@@ -10,6 +34,7 @@ class edge{
 public:
 	int to;
 	int from;
+	int parent_vertex;
 	int weight_to;
 	int weight_from;
 };
@@ -112,11 +137,6 @@ int select(vector<int> &v, int start, int fin, int k){
         return select(v, start, last, k);
 }//select
 
-
-struct myclass {
-  bool operator() (int i,int j) { return (i<j);}
-} myobject;
-
 void addEdge(vector<list<edge> > &adjA,int from,int to,int weight){
 	int size=adjA.size();
 	edge aedge_from;
@@ -124,12 +144,14 @@ void addEdge(vector<list<edge> > &adjA,int from,int to,int weight){
 	aedge_from.from=-1;
 	aedge_from.weight_from=-1;
 	aedge_from.weight_to=weight;
+	aedge_from.parent_vertex=from;
 	adjA[from].push_back(aedge_from);
 	edge aedge_to;
 	aedge_to.from=from;
 	aedge_to.to=-1;
 	aedge_to.weight_to=-1;
 	aedge_to.weight_from=weight;
+	aedge_to.parent_vertex=to;
 	adjA[to].push_back(aedge_to);
 
 }
@@ -146,6 +168,76 @@ void collect_weights(vector<list<edge> > &adjA, vector<int> & weights){
 	}
 }
 
+void select_smallest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
+	int median_weight){
+		vector<int> avert;
+		bool temp = false;
+		adjB.resize(adjA.size());
+		for(int i=0;i<adjA.size();i++){
+			for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
+				if(it->to!=-1 || it->weight_to!=-1){
+					if(it->weight_to<=median_weight){
+						 temp=true;
+          addEdge(adjB,i,it->to,it->weight_to);
+					}
+				}
+				if(it->from!=-1 || it->weight_from!=-1){
+					if(it->weight_from<=median_weight){
+						temp=true;
+					}
+				}
+			}
+			if(temp){
+				 avert.push_back(i);
+				temp=false;
+			}
+		}
+    for(int i=0;i<adjB.size();i++){
+			if(adjB[i].size()==0){
+				adjB.erase (adjB.begin()+i);
+			}
+		}
+
+}
+void connected(vector<list<edge> > &adjB, vector<short int > cc){
+
+}
+
+/*
+void BFS(vector<int> vec[],int source,int size,vector<vertex> & vert_arr){
+     for(int j=0;j<size;j++){
+       vertex av;
+       av.dist=200;
+       av.p=0;
+       vert_arr.push_back(av);
+     }
+   int vert_size= vert_arr.size();
+   queue<int> pq;
+   vert_arr[source].dist=0;
+   vert_arr[source].p=0;
+   pq.push(source);
+   vector<bool> vertex_visited(vert_size,false);
+   int vert= pq.front();
+   while(!pq.empty()){
+     vert= pq.front();
+     for(int i=0;i<vec[vert].size();i++){
+       if(!vertex_visited[vec[vert][i]] && vert_arr[vec[vert][i]].dist==200){
+         vert_arr[vec[vert][i]].dist=vert_arr[vert].dist+1;
+         vert_arr[vec[vert][i]].p=vert;
+         pq.push(vec[vert][i]);
+         vertex_visited[vec[vert][i]]=true;
+       }
+     }
+     vertex_visited[vert]=true;
+     pq.pop();
+   }
+ }
+
+*/
+
+struct myclass {
+  bool operator() (int i,int j) { return (i<j);}
+} myobject;
 
 
 int main(){
@@ -187,7 +279,7 @@ int main(){
 	m = m >> 1;
  vector<int> weights(m);
  collect_weights(adjA, weights);
-
+ std::sort (weights.begin(), weights.end(), myobject);
 
 
    int k = m >> 1;//divide by 2
@@ -195,12 +287,10 @@ int main(){
 					 k--;
 	cout << "median: ";
   int median_weight = select(weights, 0, m-1,k);
-	cout << median_weight << endl;
 
-	 std::sort (weights.begin(), weights.end(), myobject);
-	 for(int i=0;i<weights.size();i++){
-		 cout << weights[i] << endl;
-	 }
+	cout << median_weight << endl;
+	vector< list<edge> > adjB(adjA.size());
+	select_smallest(adjA,adjB,median_weight);
 
   //vector< list<edge> > adjB(adjA.size());
   //select_smallest(adjA, adjB, median_weight);
