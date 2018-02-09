@@ -28,16 +28,24 @@ the number of vertices in the original graph
 #include<iostream>
 #include<string>
 #include<list>
+#include <queue>
 using namespace std;
-
 class edge{
 public:
-	int to;
-	int from;
+	int vert;
 	int parent_vertex;
 	int weight_to;
-	int weight_from;
+	int weight;
 };
+class vertex{
+public:
+	int distance;
+	int v;
+	bool visited;
+	int index;
+};
+
+
 int select(vector<int> &v, int start, int fin, int k){
 
     int vsize = fin - start + 1;
@@ -140,17 +148,15 @@ int select(vector<int> &v, int start, int fin, int k){
 void addEdge(vector<list<edge> > &adjA,int from,int to,int weight){
 	int size=adjA.size();
 	edge aedge_from;
-	aedge_from.to=to;
-	aedge_from.from=-1;
-	aedge_from.weight_from=-1;
+	aedge_from.vert=to;
 	aedge_from.weight_to=weight;
+	aedge_from.weight=weight;
 	aedge_from.parent_vertex=from;
 	adjA[from].push_back(aedge_from);
 	edge aedge_to;
-	aedge_to.from=from;
-	aedge_to.to=-1;
+	aedge_to.vert=from;
 	aedge_to.weight_to=-1;
-	aedge_to.weight_from=weight;
+	aedge_to.weight=weight;
 	aedge_to.parent_vertex=to;
 	adjA[to].push_back(aedge_to);
 
@@ -161,7 +167,7 @@ void collect_weights(vector<list<edge> > &adjA, vector<int> & weights){
 	for(int i=0;i<adjA.size();i++){
 		for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
 			if(it->weight_to!=-1){
-				weights[index]=it->weight_to;
+				weights[index]=it->weight;
 				index++;
 			}
 		}
@@ -175,65 +181,129 @@ void select_smallest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
 		adjB.resize(adjA.size());
 		for(int i=0;i<adjA.size();i++){
 			for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
-				if(it->to!=-1 || it->weight_to!=-1){
-					if(it->weight_to<=median_weight){
-						 temp=true;
-          addEdge(adjB,i,it->to,it->weight_to);
+					if(it->weight<=median_weight){
+          addEdge(adjB,i,it->vert,it->weight);
+					temp=true;
 					}
 				}
-				if(it->from!=-1 || it->weight_from!=-1){
-					if(it->weight_from<=median_weight){
-						temp=true;
-					}
+				if(temp){
+					avert.push_back(i);
+					temp=false;
 				}
 			}
-			if(temp){
-				 avert.push_back(i);
-				temp=false;
-			}
-		}
+
     for(int i=0;i<adjB.size();i++){
 			if(adjB[i].size()==0){
 				adjB.erase (adjB.begin()+i);
 			}
 		}
-
-}
-void connected(vector<list<edge> > &adjB, vector<short int > cc){
-
-}
-
 /*
-void BFS(vector<int> vec[],int source,int size,vector<vertex> & vert_arr){
-     for(int j=0;j<size;j++){
-       vertex av;
-       av.dist=200;
-       av.p=0;
-       vert_arr.push_back(av);
-     }
-   int vert_size= vert_arr.size();
-   queue<int> pq;
-   vert_arr[source].dist=0;
-   vert_arr[source].p=0;
-   pq.push(source);
-   vector<bool> vertex_visited(vert_size,false);
-   int vert= pq.front();
-   while(!pq.empty()){
-     vert= pq.front();
-     for(int i=0;i<vec[vert].size();i++){
-       if(!vertex_visited[vec[vert][i]] && vert_arr[vec[vert][i]].dist==200){
-         vert_arr[vec[vert][i]].dist=vert_arr[vert].dist+1;
-         vert_arr[vec[vert][i]].p=vert;
-         pq.push(vec[vert][i]);
-         vertex_visited[vec[vert][i]]=true;
-       }
-     }
-     vertex_visited[vert]=true;
-     pq.pop();
-   }
- }
-
+	cout <<" size " <<  adjB.size() << endl;
+	for(int i=0;i<adjB.size();i++){
+		std::list<edge>::iterator it=adjB[i].begin();
+		cout << "-----------" << endl;
+		cout << " vertex " << it->parent_vertex << endl;
+		 for (it=adjB[i].begin(); it != adjB[i].end(); ++it){
+			 if(it->weight_to!=-1){
+			cout << "vertex to: " <<  it->vert <<  " weight to: " << it->weight_to << endl;
+		}
+	}
+	cout << endl;
+	cout << "-----------" << endl;
+}
 */
+}
+
+
+void BFS(vector<list<edge> > &adjB,int size,vector<vertex> & vert_arr){
+   int vert_size= vert_arr.size();
+	 int source = vert_arr[21].index;
+	 cout << " source: " << source << endl;
+	 cout << " vertex: " << vert_arr[21].v << endl;
+   cout << "----------" << endl;
+
+   queue<int> pq;
+   vert_arr[source].distance=0;
+  pq.push(source);
+  vector<bool> vertex_visited(vert_size,false);
+  int vert= pq.front();
+  while(!pq.empty()){
+		 //pq.pop();
+    vert= pq.front();
+    std::list<edge>::iterator it=adjB[vert].begin();
+		for (it=adjB[vert].begin(); it != adjB[vert].end(); ++it){
+			if( it->weight_to!=-1){
+				int index=0;
+				for(int i=0;i<vert_arr.size();i++){
+					if(it->vert==vert_arr[i].v){
+						index=i;
+						i= vert_arr.size();
+					}
+				}
+			  if(!vertex_visited[index] && vert_arr[index].distance==-1){
+				vert_arr[index].distance=vert_arr[vert].distance+1;
+				vertex_visited[index]=true;
+				pq.push(index);
+			  }
+			}
+		}
+		vertex_visited[vert]=true;
+    pq.pop();
+    //vertex_visited[vert]=true;
+  }
+
+}
+
+int connected(vector<list<edge> > &adjB, vector<int > &cc){
+	 int size = adjB.size();
+   vector<vertex> distance_array;
+	 std::list<edge>::iterator it;
+	 for(int i=0;i<size;i++){
+	   it=adjB[i].begin();
+		 vertex av;
+		 av.v=it->parent_vertex;
+		 av.distance=-1;
+		 av.index=i;
+		 av.visited=false;
+		 distance_array.push_back(av);
+	 }
+/*
+	for(int i=0;i<distance_array.size();i++){
+		cout << " vertex: " << distance_array[i].v << " distance: " <<
+		distance_array[i].distance << endl;
+	}
+*/
+
+	cout <<" size " <<  adjB.size() << endl;
+	for(int i=0;i<adjB.size();i++){
+		std::list<edge>::iterator it=adjB[i].begin();
+		cout << "-----------" << endl;
+		cout << " vertex " << it->parent_vertex << endl;
+		cout << "size " << adjB[i].size() << endl;
+		 for (it=adjB[i].begin(); it != adjB[i].end(); ++it){
+			if( it->weight_to!=-1){
+			cout << "vertex to: " <<  it->vert <<  " weight to: " << it->weight_to << endl;
+		 }
+	}
+	cout << endl;
+	cout << "-----------" << endl;
+}
+
+cout << "BFS " << endl;
+
+
+	BFS(adjB,size,distance_array);
+		for(int i=0;i<distance_array.size();i++){
+			cout << " vertex: " << distance_array[i].v << " distance: " <<
+			distance_array[i].distance << endl;
+		}
+
+	return 0;
+}
+
+
+
+
 
 struct myclass {
   bool operator() (int i,int j) { return (i<j);}
@@ -291,7 +361,8 @@ int main(){
 	cout << median_weight << endl;
 	vector< list<edge> > adjB(adjA.size());
 	select_smallest(adjA,adjB,median_weight);
-
+  vector<int> cc(adjB.size());
+	int total_cc = connected(adjB,cc);
   //vector< list<edge> > adjB(adjA.size());
   //select_smallest(adjA, adjB, median_weight);
 
