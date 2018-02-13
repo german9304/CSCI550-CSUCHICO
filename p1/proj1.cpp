@@ -210,31 +210,26 @@ void select_smallest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
 	}
 
 void select_gratest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
-	int median_weight,vector<component> & cc,vector<int> & w){
+	int median_weight,vector<int> & cc,vector<int> & w){
 		bool t = false;
 		bool t1 = false;
 		int cc_1=0;
 		int cc_2=0;
-		int v1=0;
-		int v2=0;
-		vector<int> temp(2,100);
 		for(int i=0;i<adjA.size();i++){
 			for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
 				if(it->weight_to!=-1){
 					if(it->weight>median_weight){
 						for(int ind=0;ind<cc.size();ind++){
-							if(i==cc[ind].v){
+							if(i==ind){
 								t = true;
-								cc_1=cc[ind].cc;
-								v1=cc[ind].v;
+								cc_1=cc[ind];
 								ind= cc.size();
 							}
 						}
 						for(int in=0;in<cc.size();in++){
-							if(cc[in].v==it->vert){
+							if(in==it->vert){
 								t1=true;
-								cc_2=cc[in].cc;
-								v2=cc[in].v;
+								cc_2=cc[in];
 								in= cc.size();
 							}
 						}
@@ -245,17 +240,18 @@ void select_gratest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
 							t= false;
 							t1=false;
 						}
+
 					}
 				}
 			}
 		}
 	}
 
-void BFS(vector<list<edge> > &adjB,int s,int size,vector<vertex> & vert_arr){
+void BFS(vector<list<edge> > &adjB,int s,int size,vector<int> & vert_arr){
 	int vert_size= vert_arr.size();
 	int source = s;
 	queue<int> pq;
-	vert_arr[s].distance=0;
+	vert_arr[s]=0;
 	pq.push(source);
 	vector<bool> vertex_visited(vert_size,false);
 	int vert= pq.front();
@@ -263,8 +259,8 @@ void BFS(vector<list<edge> > &adjB,int s,int size,vector<vertex> & vert_arr){
 		vert= pq.front();
 		std::list<edge>::iterator 	it=adjB[vert].begin();
 		for ( it=adjB[vert].begin(); it != adjB[vert].end(); ++it){
-			if(!vertex_visited[it->to_vert] && vert_arr[it->to_vert].distance==-1){
-				vert_arr[it->to_vert].distance=vert_arr[vert].distance+1;
+			if(!vertex_visited[it->to_vert] && vert_arr[it->to_vert]==-1){
+				vert_arr[it->to_vert]=vert_arr[vert]+1;
 				vertex_visited[it->to_vert]=true;
 				pq.push(it->to_vert);
 			}
@@ -274,25 +270,18 @@ void BFS(vector<list<edge> > &adjB,int s,int size,vector<vertex> & vert_arr){
 	}
 }
 
-void init(vector<list<edge> > &adjB, vector<vertex> &distance_array,int size){
+void init(vector<list<edge> > &adjB, vector<int> &distance_array,int size){
 	std::list<edge>::iterator it;
 	for(int i=0;i<size;i++){
-		it=adjB[i].begin();
-		vertex av;
-		av.v=i;
-		av.distance=-1;
-		distance_array.push_back(av);
+		distance_array[i]=-1;
 	}
 }
-int connected(vector<list<edge> > &adjB, vector<component> &cc){
+int connected(vector<list<edge> > &adjB, vector<int> &cc){
 	int size = adjB.size();
 	int total_cc=1;
-	vector<vertex> distance_array;
+	vector<int> distance_array(size);
 	for(int i=0;i<cc.size();i++){
-		component acomp;
-		acomp.v=-1;
-		acomp.cc=-1;
-		cc[i]=acomp;
+		cc[i]=-1;
 	}
 	int s=0;
 	int source=0;
@@ -304,17 +293,15 @@ int connected(vector<list<edge> > &adjB, vector<component> &cc){
 		init(adjB,distance_array,size);
 		BFS(adjB,source,size,distance_array);
 		for(int j=0;j<distance_array.size();j++){
-			if(distance_array[j].distance!=-1){
-				if(cc[j].cc==-1){
-					cc[j].cc=cc_count;
-					cc[j].v=j;
+			if(distance_array[j]!=-1){
+				if(cc[j]==-1){
+					cc[j]=cc_count;
 				}
 			}
 		}
-		distance_array.clear();
 		int flag=false;
 		for(int i=0;i<cc.size();i++){
-			if(cc[i].cc==-1){
+			if(cc[i]==-1){
 				source=i;
 				flag=1;
 				cc_count++;
@@ -349,7 +336,9 @@ void MBST( vector<list<edge> > &adjA,
 			//.................................
 			for(int i=0;i<1;i++){
 				for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
-					cout << it->weight << endl;
+					//if(it->weight_to!=-1){
+					cout << it->from << " " << it->to << " " << it->weight << endl;
+				 //}
 				}
 			}
 			return;
@@ -376,7 +365,7 @@ void MBST( vector<list<edge> > &adjA,
 		/******* Find connected components in adjB
 		in linear time
 		***************************************/
-		vector<component> cc(adjB.size());
+		vector<int > cc(adjB.size());
 		int total_cc = connected(adjB, cc);//number of comp
 		/**********     If connected (only one component)
 		we don't need edges of A anymore
@@ -405,6 +394,14 @@ void MBST( vector<list<edge> > &adjA,
 			Add edges of adjB (use original names)
 			into adjD
 			*****************************************/
+				for(int i=0;i<adjB.size();i++){
+					//cout << i <<" ";
+					for (std::list<edge>::iterator it=adjB[i].begin(); it != adjB[i].end(); ++it){
+						if(it->weight_to!=-1){
+						cout << i << " " << it->vert << " " << it->weight << endl;
+					 }
+					}
+				}
 			vector<list<edge> > adjC(total_cc);
 			std::vector<int> w;
 			select_gratest(adjA,adjC,median_weight,cc,w);
