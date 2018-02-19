@@ -209,43 +209,20 @@ void select_smallest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
 		}
 	}
 
-void select_gratest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
-	int median_weight,vector<int> & cc,vector<int> & w){
-		bool t = false;
-		bool t1 = false;
-		int cc_1=0;
-		int cc_2=0;
-		for(int i=0;i<adjA.size();i++){
-			for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
-				if(it->weight_to!=-1){
-					if(it->weight>median_weight){
-						for(int ind=0;ind<cc.size();ind++){
-							if(i==ind){
-								t = true;
-								cc_1=cc[ind];
-								ind= cc.size();
+	void select_gratest(vector<list<edge> > &adjA,vector<list<edge> > &adjB,
+		int median_weight,vector<int> & cc,vector<int> & w){
+			for(int i=0;i<adjA.size();i++){
+				for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
+					if(it->weight_to!=-1){
+						if(it->weight>median_weight){
+							if(cc[i]!=cc[it->vert]){
+								addEdge(adjB,cc[i],cc[it->vert],it->weight,it->from,it->to);
 							}
 						}
-						for(int in=0;in<cc.size();in++){
-							if(in==it->vert){
-								t1=true;
-								cc_2=cc[in];
-								in= cc.size();
-							}
-						}
-						if(t == true && t1==true){
-							if(cc_1!=cc_2){
-								addEdge(adjB,cc_1,cc_2,it->weight,it->from,it->to);
-							}
-							t= false;
-							t1=false;
-						}
-
 					}
 				}
 			}
 		}
-	}
 
 void BFS(vector<list<edge> > &adjB,int s,int size,vector<int> & vert_arr){
 	int vert_size= vert_arr.size();
@@ -269,7 +246,6 @@ void BFS(vector<list<edge> > &adjB,int s,int size,vector<int> & vert_arr){
 		pq.pop();
 	}
 }
-
 void init(vector<list<edge> > &adjB, vector<int> &distance_array,int size){
 	std::list<edge>::iterator it;
 	for(int i=0;i<size;i++){
@@ -283,13 +259,11 @@ int connected(vector<list<edge> > &adjB, vector<int> &cc){
 	for(int i=0;i<cc.size();i++){
 		cc[i]=-1;
 	}
-	int s=0;
 	int source=0;
 	int cc_count=0;
-	vector<bool> visited(cc.size(),false);
-	int check_connected=false;
-	int count=0;
-	while(!check_connected){
+	std::vector<int> v;
+	int i=0;
+	while(i!=cc.size()){
 		init(adjB,distance_array,size);
 		BFS(adjB,source,size,distance_array);
 		for(int j=0;j<distance_array.size();j++){
@@ -299,18 +273,13 @@ int connected(vector<list<edge> > &adjB, vector<int> &cc){
 				}
 			}
 		}
-		int flag=false;
-		for(int i=0;i<cc.size();i++){
+		for( i=source;i<cc.size();i++){
 			if(cc[i]==-1){
 				source=i;
-				flag=1;
 				cc_count++;
 				total_cc++;
 				break;
 			}
-		}
-		if(!flag){
-			check_connected=true;
 		}
 	}
 	if(total_cc==0){
@@ -334,12 +303,13 @@ void MBST( vector<list<edge> > &adjA,
 			//Here you need to add edge to adjD
 			//from adjA (add original name of the edge)
 			//.................................
-			for(int i=0;i<1;i++){
+			for(int i=0;i<2;i++){
 				for (std::list<edge>::iterator it=adjA[i].begin(); it != adjA[i].end(); ++it){
-					//if(it->weight_to!=-1){
-					cout << it->from << " " << it->to << " " << it->weight << endl;
-				 //}
+					if(it->weight_to!=-1){
+					addEdge(adjD,it->from,it->to,it->weight,it->from,it->to);
+				 }
 				}
+
 			}
 			return;
 		}
@@ -376,7 +346,7 @@ void MBST( vector<list<edge> > &adjA,
 
 		if(total_cc == 1){
 			MBST(adjB, adjD);
-     return;
+     //return;
 		}else{
 			/******     If not connected,
 			contract connected components
@@ -394,19 +364,19 @@ void MBST( vector<list<edge> > &adjA,
 			Add edges of adjB (use original names)
 			into adjD
 			*****************************************/
-				for(int i=0;i<adjB.size();i++){
-					//cout << i <<" ";
-					for (std::list<edge>::iterator it=adjB[i].begin(); it != adjB[i].end(); ++it){
-						if(it->weight_to!=-1){
-						cout << i << " " << it->vert << " " << it->weight << endl;
-					 }
-					}
-				}
 			vector<list<edge> > adjC(total_cc);
 			std::vector<int> w;
 			select_gratest(adjA,adjC,median_weight,cc,w);
 			MBST(adjC, adjD);
-			return;
+		//	cout << " size: " << adjB.size() << endl;
+				for(int i=0;i<adjB.size();i++){
+					for (std::list<edge>::iterator it=adjB[i].begin(); it != adjB[i].end(); ++it){
+						if(it->weight_to!=-1){
+						addEdge(adjD,it->from,it->to,it->weight,it->from,it->to);
+					 }
+					}
+				}
+			//return;
 		}//else not connected
 	}//MBST recursive
 
@@ -421,5 +391,16 @@ int main(){
 		addEdge(adjA,from,to,weight,from,to);
 	}
 	MBST(adjA,adjD);
+	int max_weight=0;
+	for(int i=0;i<adjD.size();i++){
+		for (std::list<edge>::iterator it=adjD[i].begin(); it != adjD[i].end(); ++it){
+			if(it->weight_to!=-1){
+				if(it->weight>max_weight){
+					max_weight=it->weight;
+				}
+			}
+		}
+	}
+ cout << max_weight << endl;
 	return 0;
 }
