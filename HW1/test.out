@@ -1,0 +1,43 @@
+ v 7 max  distance 4
+----------
+vertex: 0
+ dist: 0  parent: -1 
+vertex: 1
+ dist: 2  parent: 3 
+vertex: 2
+ dist: 2  parent: 3 
+vertex: 3
+ dist: 1  parent: 0 
+vertex: 4
+ dist: 2  parent: 3 
+vertex: 5
+ dist: 3  parent: 4 
+vertex: 6
+ dist: 3  parent: 4 
+vertex: 7
+ dist: 4  parent: 6 
+vertex: 8
+ dist: 4  parent: 6 
+----------
+ v 7 max  distance 4
+----------
+vertex: 0
+ dist: 4  parent: 3 
+vertex: 1
+ dist: 4  parent: 3 
+vertex: 2
+ dist: 4  parent: 3 
+vertex: 3
+ dist: 3  parent: 4 
+vertex: 4
+ dist: 2  parent: 6 
+vertex: 5
+ dist: 3  parent: 4 
+vertex: 6
+ dist: 1  parent: 7 
+vertex: 7
+ dist: 0  parent: -1 
+vertex: 8
+ dist: 2  parent: 6 
+----------
+ node 7

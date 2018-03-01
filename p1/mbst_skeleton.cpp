@@ -17,11 +17,12 @@ adjA[u] has v
 adjA[v] has u
 
 5. Initially, adjD's vector has the same size as
-the number of vertices in the original graph 
+the number of vertices in the original graph
 (and this does not change through the algorithm)
 ***********************************************/
 
-void MBST( vector<list<edge> > &adjA, 
+
+void MBST( vector<list<edge> > &adjA,
                 vector<list<edge> > &adjD){
 
         //Count the number of edges in adjA
@@ -30,7 +31,8 @@ void MBST( vector<list<edge> > &adjA,
 
         for(int i = 0; i < size; i++){
                 m += adjA[i].size();
-        }   
+        }
+        cout << "m " << m << endl;
         m = m >> 1;//divide by 2, each edge occurs twice in Adj
         //BASE case, if number of edges is 1, return
         //after adding the first edge to adjD
@@ -57,7 +59,7 @@ void MBST( vector<list<edge> > &adjA,
         int median_weight = select(weights, 0, m-1,k);
         //Function "select" is provided
 
-        
+
         /*****  Collect edges with weights <= median_weight
                 from adjA into adjB
                 Erase an edge from adjA:
@@ -70,8 +72,8 @@ void MBST( vector<list<edge> > &adjA,
         select_smallest(adjA, adjB, median_weight);
 
 
-        /******* Find connected components in adjB 
-                in linear time 
+        /******* Find connected components in adjB
+                in linear time
          ***************************************/
         vector<short int> cc(adjB.size());
         int total_cc = connected(adjB, cc);//number of comp
@@ -80,32 +82,33 @@ void MBST( vector<list<edge> > &adjA,
 
         /**********     If connected (only one component)
                 we don't need edges of A anymore
-                just call recursively MBST and return 
-                after the recursive call returns 
+                just call recursively MBST and return
+                after the recursive call returns
                 i.e. do nothing after recursive call returns
         ****************************************/
 
         if(total_cc == 1){
                 MBST(adjB, adjD);
+               // exit(0);
                 return;
         }else{
-        
-            /******     If not connected, 
+
+            /******     If not connected,
                 contract connected components
-                construct adjC from adjA and 
-                super vertices (each represents a 
+                construct adjC from adjA and
+                super vertices (each represents a
                 connected component)
-                
+
                 Rename edges according to the names
                 of new supervertices (0, 1,.., total_cc-1)
-                call recursively MBST on adjC: 
-				
+                call recursively MBST on adjC:
+
 				MBST(adjC, adjD);
-                
-                When call returns, 
+
+                When call returns,
                 Add edges of adjB (use original names)
                 into adjD
-            *****************************************/ 
+            *****************************************/
 
                 return;
         }//else not connected

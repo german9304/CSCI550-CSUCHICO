@@ -368,7 +368,6 @@ void MBST( vector<list<edge> > &adjA,
 			std::vector<int> w;
 			select_gratest(adjA,adjC,median_weight,cc,w);
 			MBST(adjC, adjD);
-		//	cout << " size: " << adjB.size() << endl;
 				for(int i=0;i<adjB.size();i++){
 					for (std::list<edge>::iterator it=adjB[i].begin(); it != adjB[i].end(); ++it){
 						if(it->weight_to!=-1){
