@@ -1,23 +1,45 @@
+0 0 10 100
+3 3 15 200
 Sum Red Nova 450
 Sum Star Trace 220
+weights red nova 
+myvector contains:
+ 40
+ 3
+ 2
+
+weights star trace 
+myvector contains:
+ 9
+ 7
+ 6
+
 red_nova_stations: 4
 max_weight red nova 40
-----------red nova----------
-parent_array
-0 0 1 2 
-distance_array
-0 3 43 45 
+star_trace_stations: 4
 max_weight star trace 9
----------star trace---------
-parent_array
-0 0 1 2 
-distance_array
-0 7 13 22 
-total: 670
-removed max weight 
-new list
-from 0 1 3 
-from 2 3 2 
+total : 67
+total: *10 670
+redNova components
+removed max weight 40
+
+conected components 1 4
+0 0 1 1 
+conected components 2 4
+2 2 2 2 
+ size: 3
+
+res: 2
+starTracs components
+removed max weight 9
+
+conected components 1 4
+0 0 0 1 
+conected components 2 4
+2 2 2 2 
+ size: 3
+
+res: 2
 total_values: 
 870
 1020
