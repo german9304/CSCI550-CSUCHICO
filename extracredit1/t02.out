@@ -1,18 +1,1 @@
-Sum Red Nova 300
-Sum Star Trace 220
-red_nova_stations: 4
-max_weight red nova 25
-----------red nova----------
-parent_array
-0 0 1 2 
-distance_array
-0 3 28 30 max_weight star trace 9
----------star trace---------
-parent_array
-0 0 1 2 
-distance_array
-0 7 13 22 
-total: 520
-total_values: 
-720
-870
+0 0 720
