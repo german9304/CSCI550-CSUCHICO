@@ -53,7 +53,6 @@ void addEdgeC(vector<list<edge> > & alist , int from, int to, int v_from,int v_t
 	vertex_to.cost=cost;
 	alist[to].push_back(vertex_to);
 }
-bool myfunction (int i,int j) { return (i>j); }
 bool compare_edges(edge i,edge  j) { return (i.weight>j.weight); }
 
 int BFS(vector<list<edge> > & alist,int source,vector<int> & parent_array,
