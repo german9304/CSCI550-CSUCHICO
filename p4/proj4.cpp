@@ -3,15 +3,42 @@
 #include <vector>
 using namespace std;
 
-void count(vector<int> & count_c,int str_length,string cat,vector<int> & new_intername){
-
+void count(int arr[], int str_length, string cat, vector<int> & new_intername,
+vector<int> & occurances, vector<int> & smaller_characters, vector<int> & end_bucket){
+  occurances.push_back(1);
+	end_bucket.push_back(0);
+	smaller_characters.push_back(0);
 	for(int i=0;i<str_length;i++){
 		int a = cat[i];
-		count_c[a]++;
+		arr[a]++;
 	}
+	for(int i=0;i<256;i++){
+			if(arr[i]>0){
+				occurances.push_back(arr[i]);
+		    //cout << a << " " << 	count_c[i] <<" ";
+		}
+	}
+	int count = 0;
+	int count_end = 0;
+  for(int i= 1;i<occurances.size();i++){
+		//count = occurances[i-1];
+		 count = occurances[i-1] + smaller_characters[i-1];
+		 smaller_characters.push_back(count);
+		//cout << occurances[i-1] <<" " << smaller_characters[i-1]  << " ";
+    //  cout << "res: " <<smaller_characters[i-1]  << " + " <<  occurances[i-1] << " = " << smaller_characters[i] << " *  " <<endl;
+		 count_end=  end_bucket[i-1] + occurances[i];
+		 end_bucket.push_back(count_end);
+		 //cout << "----------" <<endl;
+	//	 cout << "res: " <<end_bucket[i-1]  << " + " <<  occurances[i] << " = " << end_bucket[i] << " *  " <<endl;
+
+
+	}
+	cout <<endl;
+	//cout <<endl;
+	/*
 	int rename_index=1;
   for(int i=0;i<256;i++){
-		if(count_c[i]>0){
+		if(occurances[i]>0){
 			char a = i;
 			new_intername[i]=rename_index++;
 			cout <<rename_index << " " << a << " " << new_intername[i] << " " <<endl;
@@ -23,6 +50,7 @@ void count(vector<int> & count_c,int str_length,string cat,vector<int> & new_int
 		//	cout <<a << " " << cc[i] << " " <<endl;
 		}
 	}
+*/
 }
 void substring_lms(string in){
 	in+="$";
@@ -36,12 +64,15 @@ int main(){
 	cat+=in;
 	getline(cin, in);
   }
-
-	vector<int> cc(256,0);
+  int arr[256]={0};
 	vector<int> newinteger(256,0);
 	vector<int> lms(256,0);
+	vector<int> occurances;
+	vector<int> smaller_characters;
+	vector<int> end_bucket;
 	int str_length= cat.length();
-	count(cc,str_length,cat,newinteger);
+	count(arr,str_length,cat,newinteger,occurances,smaller_characters
+	,end_bucket);
 
 
 
