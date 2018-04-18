@@ -72,11 +72,12 @@ vector<int> & occurances, vector<int> & smaller_characters, vector<int> & end_bu
 
 }
 void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
-	vector<int> & suffix_array,vector<int> & end_bucket){
+	vector<int> & suffix_array,vector<int> & end_bucket,vector<int> & lms){
   vector<int> copy_end_bucket = end_bucket;
 	int end = in.length()-1;
 	//cout <<"size: " << type_suffix.size() <<endl;
 	type_suffix[end]=1;
+  lms[end]=1;
 	for(int i=end-1;i>=0;i--){
 		/*
 		int  b = in[i+1];
@@ -96,6 +97,7 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 					// cout << i << " " << i+1 <<endl;
 					suffix_array[index]= i+1;
 					copy_end_bucket[arr[b]]--;
+          lms[suffix_array[index]]=1;
 					// cout << i << " " << in[i] << " " << in[i+1] <<" " <<  end_bucket[arr[b]]<<endl;
 				}
 			}
@@ -111,6 +113,7 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 		}
 	//	cout <<"(i) " << in[i] << " (i + 1) " << in[i+1] << "  *  ";
 	}
+  //lms = suffix_array;
 /*
 	cout <<endl;
 	for(int i=end-1;i>=0;i--){
@@ -140,7 +143,8 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 	//cout <<endl;
 }
 void induce_sort(int arr[],vector<int> & suffix_array,vector<int> & t_array,
-string in,vector<int> & head_bucket,vector<int> & end_bucket){
+string in,vector<int> & head_bucket,vector<int> & end_bucket,
+vector<bool> & bool_array,vector<int> & lms){
   vector<int> copy_end_bucket = end_bucket;
   vector<int> copy_head_bucket = head_bucket;
   cout <<endl;
@@ -221,6 +225,7 @@ string in,vector<int> & head_bucket,vector<int> & end_bucket){
   int end = suffix_array.size();
 	for(int i=end-1;i>=0;i--){
   //cout << suffix_array[i] << " ";
+
     int p = suffix_array[i];
     if(p==0){
 
@@ -231,7 +236,9 @@ string in,vector<int> & head_bucket,vector<int> & end_bucket){
       // cout << a <<endl;
        int index = arr[b];
        int end_bucket_index= copy_end_bucket[index];
+       //bool_array
         //suffix_array[i]
+      //  cout << t_array[p-1] <<endl;
        //cout << "end: " << copy_end_bucket[index] << " p: " << p-1 << endl;
        suffix_array[end_bucket_index]=p-1;
        copy_end_bucket[index]--;
@@ -241,11 +248,25 @@ string in,vector<int> & head_bucket,vector<int> & end_bucket){
      }
     //cout << t_array[p-1] << " ";
   }
+
+  for(int i=0;i<bool_array.size();i++){
+   if(lms[suffix_array[i]]){
+     bool_array[i]=1;
+   }
+  }
+/*
+  cout <<endl;
     cout << "new suffix_array right left" <<endl;
     for(int i=0;i<suffix_array.size();i++){
       cout << suffix_array[i] <<" ";
     }
+    cout << "bool_array" <<endl;
+    for(int i=0;i<bool_array.size();i++){
+      cout << bool_array[i] <<" ";
+    }
+
   cout <<endl;
+  */
 }
 int main(){
 	string in;
@@ -271,8 +292,12 @@ int main(){
   cout <<endl;
 	string str_final = 	cat+="$";
 	vector<int> suffix_array(str_final.length(),-1);
-  type_suffix_array(arr,t_array,str_final,suffix_array,end_bucket);
-	induce_sort(arr,suffix_array,t_array,str_final,head_bucket,end_bucket);
+  vector<bool>  bool_array(str_final.length(),0);
+  vector<int> lms(str_final.length(),0);
+  type_suffix_array(arr,t_array,str_final,suffix_array,end_bucket,
+  lms);
+	induce_sort(arr,suffix_array,t_array,str_final,head_bucket,end_bucket,
+  bool_array,lms);
 	cout <<endl;
 
 	return 0;
