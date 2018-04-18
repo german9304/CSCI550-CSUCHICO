@@ -1,51 +1,2068 @@
-res: 0 + 311 = 311 *  
-res: 311 + 2 = 313 *  
-res: 313 + 1 = 314 *  
-res: 314 + 1 = 315 *  
-res: 315 + 2 = 317 *  
-res: 317 + 2 = 319 *  
-res: 319 + 23 = 342 *  
-res: 342 + 5 = 347 *  
-res: 347 + 15 = 362 *  
-res: 362 + 2 = 364 *  
-res: 364 + 1 = 365 *  
-res: 365 + 2 = 367 *  
-res: 367 + 1 = 368 *  
-res: 368 + 2 = 370 *  
-res: 370 + 4 = 374 *  
-res: 374 + 4 = 378 *  
-res: 378 + 1 = 379 *  
-res: 379 + 1 = 380 *  
-res: 380 + 4 = 384 *  
-res: 384 + 3 = 387 *  
-res: 387 + 1 = 388 *  
-res: 388 + 1 = 389 *  
-res: 389 + 6 = 395 *  
-res: 395 + 1 = 396 *  
-res: 396 + 118 = 514 *  
-res: 514 + 20 = 534 *  
-res: 534 + 54 = 588 *  
-res: 588 + 70 = 658 *  
-res: 658 + 216 = 874 *  
-res: 874 + 39 = 913 *  
-res: 913 + 36 = 949 *  
-res: 949 + 70 = 1019 *  
-res: 1019 + 112 = 1131 *  
-res: 1131 + 2 = 1133 *  
-res: 1133 + 11 = 1144 *  
-res: 1144 + 73 = 1217 *  
-res: 1217 + 44 = 1261 *  
-res: 1261 + 123 = 1384 *  
-res: 1384 + 135 = 1519 *  
-res: 1519 + 58 = 1577 *  
-res: 1577 + 1 = 1578 *  
-res: 1578 + 118 = 1696 *  
-res: 1696 + 118 = 1814 *  
-res: 1814 + 148 = 1962 *  
-res: 1962 + 42 = 2004 *  
-res: 2004 + 14 = 2018 *  
-res: 2018 + 11 = 2029 *  
-res: 2029 + 3 = 2032 *  
-res: 2032 + 22 = 2054 *  
-res: 2054 + 8 = 2062 *  
 
+
+char: . element: 9  end_bucket 362
+true
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: p element: 40  end_bucket 1577
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char: k element: 35  end_bucket 1144
+char: s element: 43  end_bucket 1814
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char: A element: 16  end_bucket 378
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: t element: 44  end_bucket 1962
+char: f element: 30  end_bucket 913
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: a element: 25  end_bucket 514
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: g element: 31  end_bucket 949
+char: a element: 25  end_bucket 514
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: b element: 26  end_bucket 534
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: w element: 47  end_bucket 2029
+char: o element: 39  end_bucket 1519
+char: d element: 28  end_bucket 658
+char: k element: 35  end_bucket 1144
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: m element: 37  end_bucket 1261
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: u element: 45  end_bucket 2004
+char: q element: 41  end_bucket 1578
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char: y element: 49  end_bucket 2054
+char: l element: 36  end_bucket 1217
+char: p element: 40  end_bucket 1577
+char: p element: 40  end_bucket 1577
+char: u element: 45  end_bucket 2004
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: b element: 26  end_bucket 534
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: y element: 49  end_bucket 2054
+char: a element: 25  end_bucket 514
+char: d element: 28  end_bucket 658
+char: o element: 39  end_bucket 1519
+char: T element: 23  end_bucket 395
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: s element: 43  end_bucket 1814
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: d element: 28  end_bucket 658
+char: l element: 36  end_bucket 1217
+char: o element: 39  end_bucket 1519
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: z element: 50  end_bucket 2062
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: d element: 28  end_bucket 658
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: u element: 45  end_bucket 2004
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char: - element: 8  end_bucket 347
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: p element: 40  end_bucket 1577
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: d element: 28  end_bucket 658
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: i element: 33  end_bucket 1131
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char: u element: 45  end_bucket 2004
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: h element: 32  end_bucket 1019
+char: g element: 31  end_bucket 949
+char: i element: 33  end_bucket 1131
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char: y element: 49  end_bucket 2054
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: p element: 40  end_bucket 1577
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: h element: 32  end_bucket 1019
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char: E element: 17  end_bucket 379
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: m element: 37  end_bucket 1261
+char: u element: 45  end_bucket 2004
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: m element: 37  end_bucket 1261
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: f element: 30  end_bucket 913
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: i element: 33  end_bucket 1131
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: p element: 40  end_bucket 1577
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: j element: 34  end_bucket 1133
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: 8 element: 15  end_bucket 374
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: y element: 49  end_bucket 2054
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: h element: 32  end_bucket 1019
+char: c element: 27  end_bucket 588
+char: u element: 45  end_bucket 2004
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: l element: 36  end_bucket 1217
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char: u element: 45  end_bucket 2004
+char: b element: 26  end_bucket 534
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: n element: 38  end_bucket 1384
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: I element: 19  end_bucket 384
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: y element: 49  end_bucket 2054
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: u element: 45  end_bucket 2004
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: v element: 46  end_bucket 2018
+char: i element: 33  end_bucket 1131
+char: r element: 42  end_bucket 1696
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: k element: 35  end_bucket 1144
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: e element: 29  end_bucket 874
+char: j element: 34  end_bucket 1133
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: p element: 40  end_bucket 1577
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: u element: 45  end_bucket 2004
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: x element: 48  end_bucket 2032
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: g element: 31  end_bucket 949
+char: i element: 33  end_bucket 1131
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: 8 element: 15  end_bucket 374
+char: $ element: 3  end_bucket 314
+char: y element: 49  end_bucket 2054
+true
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: i element: 33  end_bucket 1131
+char: x element: 48  end_bucket 2032
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: p element: 40  end_bucket 1577
+char: p element: 40  end_bucket 1577
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: d element: 28  end_bucket 658
+char: l element: 36  end_bucket 1217
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: w element: 47  end_bucket 2029
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: O element: 20  end_bucket 387
+char: . element: 9  end_bucket 362
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: o element: 39  end_bucket 1519
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: y element: 49  end_bucket 2054
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: p element: 40  end_bucket 1577
+char: u element: 45  end_bucket 2004
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: 2 element: 12  end_bucket 367
+char: 1 element: 11  end_bucket 365
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: 3 element: 13  end_bucket 368
+char:   element: 1  end_bucket 311
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: w element: 47  end_bucket 2029
+char: y element: 49  end_bucket 2054
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: i element: 33  end_bucket 1131
+char: r element: 42  end_bucket 1696
+char: u element: 45  end_bucket 2004
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: T element: 23  end_bucket 395
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: g element: 31  end_bucket 949
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: o element: 39  end_bucket 1519
+char: b element: 26  end_bucket 534
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: v element: 46  end_bucket 2018
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: l element: 36  end_bucket 1217
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: t element: 44  end_bucket 1962
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: A element: 16  end_bucket 378
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: ) element: 6  end_bucket 319
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: g element: 31  end_bucket 949
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: z element: 50  end_bucket 2062
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: l element: 36  end_bucket 1217
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: ( element: 5  end_bucket 317
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: k element: 35  end_bucket 1144
+char: c element: 27  end_bucket 588
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: o element: 39  end_bucket 1519
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: p element: 40  end_bucket 1577
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: i element: 33  end_bucket 1131
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: v element: 46  end_bucket 2018
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: u element: 45  end_bucket 2004
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: b element: 26  end_bucket 534
+char: u element: 45  end_bucket 2004
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: m element: 37  end_bucket 1261
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: w element: 47  end_bucket 2029
+char: o element: 39  end_bucket 1519
+char: d element: 28  end_bucket 658
+char: - element: 8  end_bucket 347
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: - element: 8  end_bucket 347
+char: p element: 40  end_bucket 1577
+char: u element: 45  end_bucket 2004
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: ' element: 4  end_bucket 315
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: T element: 23  end_bucket 395
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char: f element: 30  end_bucket 913
+char: r element: 42  end_bucket 1696
+char: u element: 45  end_bucket 2004
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: r element: 42  end_bucket 1696
+char: u element: 45  end_bucket 2004
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: g element: 31  end_bucket 949
+char: y element: 49  end_bucket 2054
+char: k element: 35  end_bucket 1144
+char: c element: 27  end_bucket 588
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: p element: 40  end_bucket 1577
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: h element: 32  end_bucket 1019
+char: g element: 31  end_bucket 949
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: p element: 40  end_bucket 1577
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: O element: 20  end_bucket 387
+char: . element: 9  end_bucket 362
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: z element: 50  end_bucket 2062
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: o element: 39  end_bucket 1519
+char: b element: 26  end_bucket 534
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: h element: 32  end_bucket 1019
+char: g element: 31  end_bucket 949
+char: i element: 33  end_bucket 1131
+char: h element: 32  end_bucket 1019
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char: r element: 42  end_bucket 1696
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: a element: 25  end_bucket 514
+char: z element: 50  end_bucket 2062
+char: g element: 31  end_bucket 949
+char: i element: 33  end_bucket 1131
+char: z element: 50  end_bucket 2062
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: w element: 47  end_bucket 2029
+char: o element: 39  end_bucket 1519
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: o element: 39  end_bucket 1519
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: " element: 2  end_bucket 313
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: b element: 26  end_bucket 534
+char: " element: 2  end_bucket 313
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: a element: 25  end_bucket 514
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: k element: 35  end_bucket 1144
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char: - element: 8  end_bucket 347
+char: H element: 18  end_bucket 380
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: R element: 21  end_bucket 388
+char: . element: 9  end_bucket 362
+char: y element: 49  end_bucket 2054
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: h element: 32  end_bucket 1019
+char: g element: 31  end_bucket 949
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: m element: 37  end_bucket 1261
+char: u element: 45  end_bucket 2004
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: b element: 26  end_bucket 534
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: u element: 45  end_bucket 2004
+char: r element: 42  end_bucket 1696
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: ) element: 6  end_bucket 319
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: a element: 25  end_bucket 514
+char: g element: 31  end_bucket 949
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: 4 element: 14  end_bucket 370
+char: 8 element: 15  end_bucket 374
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: ( element: 5  end_bucket 317
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: 2 element: 12  end_bucket 367
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: p element: 40  end_bucket 1577
+char: u element: 45  end_bucket 2004
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: , element: 7  end_bucket 342
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: m element: 37  end_bucket 1261
+char: a element: 25  end_bucket 514
+char: i element: 33  end_bucket 1131
+char: d element: 28  end_bucket 658
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: 4 element: 14  end_bucket 370
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: T element: 23  end_bucket 395
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: s element: 43  end_bucket 1814
+char: m element: 37  end_bucket 1261
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: i element: 33  end_bucket 1131
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: h element: 32  end_bucket 1019
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char: s element: 43  end_bucket 1814
+char: a element: 25  end_bucket 514
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: k element: 35  end_bucket 1144
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: h element: 32  end_bucket 1019
+char: g element: 31  end_bucket 949
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: y element: 49  end_bucket 2054
+char: a element: 25  end_bucket 514
+char: w element: 47  end_bucket 2029
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: k element: 35  end_bucket 1144
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: g element: 31  end_bucket 949
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char: c element: 27  end_bucket 588
+char: y element: 49  end_bucket 2054
+char: k element: 35  end_bucket 1144
+char: c element: 27  end_bucket 588
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: l element: 36  end_bucket 1217
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: b element: 26  end_bucket 534
+char: m element: 37  end_bucket 1261
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: o element: 39  end_bucket 1519
+char: y element: 49  end_bucket 2054
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: k element: 35  end_bucket 1144
+char: o element: 39  end_bucket 1519
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: c element: 27  end_bucket 588
+char: h element: 32  end_bucket 1019
+char: g element: 31  end_bucket 949
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: w element: 47  end_bucket 2029
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: I element: 19  end_bucket 384
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: g element: 31  end_bucket 949
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: z element: 50  end_bucket 2062
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: p element: 40  end_bucket 1577
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: u element: 45  end_bucket 2004
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: d element: 28  end_bucket 658
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: p element: 40  end_bucket 1577
+char: e element: 29  end_bucket 874
+char: w element: 47  end_bucket 2029
+char: s element: 43  end_bucket 1814
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: w element: 47  end_bucket 2029
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: c element: 27  end_bucket 588
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: T element: 23  end_bucket 395
+char: . element: 9  end_bucket 362
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: o element: 39  end_bucket 1519
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: p element: 40  end_bucket 1577
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: c element: 27  end_bucket 588
+char: y element: 49  end_bucket 2054
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: x element: 48  end_bucket 2032
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: z element: 50  end_bucket 2062
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: v element: 46  end_bucket 2018
+char: i element: 33  end_bucket 1131
+char: s element: 43  end_bucket 1814
+char: s element: 43  end_bucket 1814
+char: a element: 25  end_bucket 514
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: I element: 19  end_bucket 384
+char:   element: 1  end_bucket 311
+char: . element: 9  end_bucket 362
+char: s element: 43  end_bucket 1814
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: g element: 31  end_bucket 949
+char: e element: 29  end_bucket 874
+char: b element: 26  end_bucket 534
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: w element: 47  end_bucket 2029
+char:   element: 1  end_bucket 311
+char: m element: 37  end_bucket 1261
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: m element: 37  end_bucket 1261
+char:   element: 1  end_bucket 311
+char: 0 element: 10  end_bucket 364
+char: 0 element: 10  end_bucket 364
+char: 8 element: 15  end_bucket 374
+char: y element: 49  end_bucket 2054
+char: l element: 36  end_bucket 1217
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char: l element: 36  end_bucket 1217
+char: i element: 33  end_bucket 1131
+char: v element: 46  end_bucket 2018
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: p element: 40  end_bucket 1577
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char: - element: 8  end_bucket 347
+char: e element: 29  end_bucket 874
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: g element: 31  end_bucket 949
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: , element: 7  end_bucket 342
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: S element: 22  end_bucket 389
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: i element: 33  end_bucket 1131
+char: n element: 38  end_bucket 1384
+char: U element: 24  end_bucket 396
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: m element: 37  end_bucket 1261
+char: n element: 38  end_bucket 1384
+char: r element: 42  end_bucket 1696
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: o element: 39  end_bucket 1519
+char: n element: 38  end_bucket 1384
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: s element: 43  end_bucket 1814
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: c element: 27  end_bucket 588
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: d element: 28  end_bucket 658
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: w element: 47  end_bucket 2029
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char: u element: 45  end_bucket 2004
+char: o element: 39  end_bucket 1519
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: c element: 27  end_bucket 588
+char: t element: 44  end_bucket 1962
+char: e element: 29  end_bucket 874
+char: r element: 42  end_bucket 1696
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: I element: 19  end_bucket 384
+char: . element: 9  end_bucket 362
+char: n element: 38  end_bucket 1384
+char: a element: 25  end_bucket 514
+char: e element: 29  end_bucket 874
+char: c element: 27  end_bucket 588
+char: O element: 20  end_bucket 387
+char:   element: 1  end_bucket 311
+char: c element: 27  end_bucket 588
+char: i element: 33  end_bucket 1131
+char: t element: 44  end_bucket 1962
+char: c element: 27  end_bucket 588
+char: r element: 42  end_bucket 1696
+char: A element: 16  end_bucket 378
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: f element: 30  end_bucket 913
+char: o element: 39  end_bucket 1519
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: g element: 31  end_bucket 949
+char: d element: 28  end_bucket 658
+char: e element: 29  end_bucket 874
+char:   element: 1  end_bucket 311
+char: n element: 38  end_bucket 1384
+char: e element: 29  end_bucket 874
+char: z element: 50  end_bucket 2062
+char: o element: 39  end_bucket 1519
+char: r element: 42  end_bucket 1696
+char: f element: 30  end_bucket 913
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: t element: 44  end_bucket 1962
+char:   element: 1  end_bucket 311
+char: t element: 44  end_bucket 1962
+char: a element: 25  end_bucket 514
+char:   element: 1  end_bucket 311
+char: s element: 43  end_bucket 1814
+char: t element: 44  end_bucket 1962
+char: r element: 42  end_bucket 1696
+char: a element: 25  end_bucket 514
+char: t element: 44  end_bucket 1962
+char: s element: 43  end_bucket 1814
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: n element: 38  end_bucket 1384
+char: i element: 33  end_bucket 1131
+char: l element: 36  end_bucket 1217
+char: e element: 29  end_bucket 874
+char: p element: 40  end_bucket 1577
+char: i element: 33  end_bucket 1131
+char: p element: 40  end_bucket 1577
+char:   element: 1  end_bucket 311
+char: a element: 25  end_bucket 514
+char: k element: 35  end_bucket 1144
+char: s element: 43  end_bucket 1814
+char: a element: 25  end_bucket 514
+char: l element: 36  end_bucket 1217
+char: A element: 16  end_bucket 378
+char:   element: 1  end_bucket 311
+char: e element: 29  end_bucket 874
+char: h element: 32  end_bucket 1019
+char: T element: 23  end_bucket 395
+The Alaska pipeline starts at the frozen edge of the Arctic Ocean.It stretches southward across the largest and northernmost state inthe United States, ending at a remote ice-free seaport village nearly800 miles from where it begins. It is massive in size and extremelycomplicated to operate.The steel pipe crosses windswept plains and endless miles ofdelicate tundra that tops the frozen ground. It weaves throughcrooked canyons, climbs sheer mountains, plunges over rockycrags, makes its way through thick forests, and passes over orunder hundreds of rivers and streams. The pipe is 4 feet in diameter,and up to 2 million barrels (or 84 million gallons) of crude oil canbe pumped through it daily.Resting on H-shaped steel racks called "bents," long sections ofthe pipeline follow a zigzag course high above the frozen earth.Other long sections drop out of sight beneath spongy or rockyground and return to the surface later on. The pattern of thepipeline's up-and-down route is determined by the often harshdemands of the arctic and subarctic climate, the tortuous lay of theland, and the varied compositions of soil, rock, or permafrost(permanently frozen ground). A little more than half of the pipelineis elevated above the ground. The remainder is buried anywherefrom 3 to 12 feet, depending largely upon the type of terrain andthe properties of the soil.One of the largest in the world, the pipeline cost approximately$8 billion and is by far the biggest and most expensive constructionproject ever undertaken by private industry. In fact, no singlebusiness could raise that much money, so 8 major oil companiesformed a consortium in order to share the costs. Each companycontrolled oil rights to particular shares of land in the oil fields andpaid into the pipeline-construction fund according to the size of itsholdings. Today, despite enormous problems of climate, supplyshortages, equipment breakdowns, labor disagreements, treacherousterrain, a certain amount of mismanagement, and even theft, theAlaska pipeline has been completed and is operating.$ 
+sllsslslllslslslsllsslssllsslslllsslslslslsllsllslllsslslllssslslsslssllslslslslsllslsllssslsllslllslsllsslssllssssllsllssslsslsllssslllsslslllsslslsllsslssllsslslslsssllslslsslllsllslsslslsllsllsllslsllllslslslsslllsllsllsslssssssllsslsslslsllsllsslslsllssllsslllslsslslsllllslllsllsslslsllssllsslsslslsllsslsllslslslsslsslsllssslssllsslslsllslslslsllsslllsllssllsllsllslslsslslllsslslslsslsllllsslsllslslslslslslsllllllslssllsllsslslslsllsslssslslsssllslslllslsslslsllsslslssllslslslssllslslslslslslslslslssslsslllssllslsllslsslslsssllsslssllsllslsllslslsslssllsslllssllssllslsllsslslslsslsslsslslslslssllsllsllslslsllsllslsllsslssslsllslsllsllslssslsllsllssslslslslslslslsslslllslslslslsslslssslsssslsllsllslsllslllsslsslslssslslsllllsssssllllsslllsllslslslslslllslslslsllsslssslslsllslslssslsllsslslssssllslllsslslslslssllssllslsslllsllslslslsslslssllsllsllsslsssllsllsllllslsslsllsslslslllssllslsslllsllslllsslllsslslslslslllssllslsllsllsllsllslslslsllslsllssllsssllslslllsslssslsllslllsslslllslslslslssllsslslslsllslllsslslllssllssllslslllsslslslllslllslssslsllslslsllsllslslllssllslllslsllllsslslslslslslsllsllsllsllsllsslslsllsslsslslsllslsslslsslslslsslslllslslslsllllsssllsllslslsllsllslllslslslslsslsslslslllssssllslllsslsllllssllslslsslsslsslsslllllssslllslsslllslsllsslslssllssslslssllslsllsslsllllslllsslllsllslsllsslsslslllsslslssllslsllslllsllslssllsllslllslsllsslsslslllslsllllslllslslslsllsssslsssslslslslsslslsssllsllssllsslsslslslslllsslllsslssllsssslssllsslsllsslsslslslslssllllslsslslsllssslslslsslsslslsllsslslslsllsslslssllsslslslsllsllslsllssslllslssllsllslsslslssllsllsllslslssslslslsslslsllslssllllslsslslsslsllsslsslsslsllsllsllslllsssslllsssslsslslsslslslllllllslslsllssllsllslssllsllslsllslslsllslsllsslslllslslsslslslsslslsllsssllslllslslslsllsslsslslslsllsslllssssslssllsllslllslsllsllssllsllsslsllssllsllsssllsllsssslssllssllslsslsllsslslslllsslllsllssslslsllssslsllsslssllslsslsllslssslssslsslsslsslllslllsslslslslsllssllslsssslsslsssslslsllslsllslslslssllssllsslslsllssllslllslslllslslslsllslslsssslsslsllslllssllsslsslslslsllls
