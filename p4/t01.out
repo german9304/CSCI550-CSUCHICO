@@ -8,16 +8,21 @@
 end_bucket
 0 6 8 10 14 
 
-head_bucket
-0 1 7 9 11 
-0 0 1 0 0 1 0 0 1 1 0 0 0 0 1 
-chars
-
-new suffix_array left right
-14 13 12 -1 2 5 8 1 0 11 10 4 7 3 6 
-right to left 
-
 new suffix_array right left
-14 13 12 8 9 2 5 1 0 11 10 4 7 3 6 bool_array
+14 13 12 8 9 2 5 1 0 11 10 4 7 3 6 
+bool_array
 1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 
 
+char in lms named
+$
+suffix_array
+14 13 12 8 9 2 5 1 0 11 10 4 7 3 6 bool_array
+1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 
+positions
+N array
+2 2 1 0 
+t_array
+2
+2
+1
+0

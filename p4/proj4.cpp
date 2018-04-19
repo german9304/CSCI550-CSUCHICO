@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 void count(int arr[], int str_length, string cat, vector<int> & new_intername,
@@ -87,8 +88,8 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 		if(in[i]>in[i+1]){
 			type_suffix[i]=0;
 			if(in[(i)+1]=='$'){
-				suffix_array[0]=14;
-				end_bucket[0]=-1;
+				suffix_array[0]=end;
+			//	end_bucket[0]=-1;
 			}else{
 				if(type_suffix[i+1]==1){
 					//suffix_array[0]=14;
@@ -126,12 +127,15 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 	for(int i=0;i<type_suffix.size();i++){
 		cout <<type_suffix[i];
 	}
-	cout <<endl;
+  */
+	//cout <<endl;
+  /*
 	cout <<"------" <<endl;
 	for(int i=0;i<suffix_array.size();i++){
 		cout <<suffix_array[i] << " ";
 	}
   */
+
   /*
   cout <<endl;
 	cout <<"copy_end_bucket" <<endl;
@@ -147,7 +151,8 @@ string in,vector<int> & head_bucket,vector<int> & end_bucket,
 vector<bool> & bool_array,vector<int> & lms){
   vector<int> copy_end_bucket = end_bucket;
   vector<int> copy_head_bucket = head_bucket;
-  cout <<endl;
+  //cout <<endl;
+  /*
 	cout << "head_bucket" <<endl;
     for(int i=0;i<head_bucket.size();i++){
       cout << head_bucket[i] <<" ";
@@ -156,6 +161,7 @@ vector<bool> & bool_array,vector<int> & lms){
       for(int i=0;i<t_array.size();i++){
         cout << t_array[i] <<" ";
       }
+      */
 	/*
   for(int i=0;i<in.length();i++){
 		char a = in[i];
@@ -172,37 +178,44 @@ vector<bool> & bool_array,vector<int> & lms){
     cout << t_array[i] <<" ";
   }
   */
-  cout <<endl;
-  cout << "chars" <<endl;
+  //cout <<endl;
+  //cout << "chars" <<endl;
   int size = suffix_array.size();
   /*
    Left-to-Right scanning
   */
+  //cout << "head end_bucket"<<endl;
 	for(int i=0;i<suffix_array.size();i++){
   		int p = suffix_array[i];
       if(p!=-1){
         if(p==0){
           //cout <<"0" <<endl;
           char a = in[size-1];
-          //cout << "a " << a << " "<<endl;
+        //  cout << "a " << a << " "<<endl;
           if(suffix_array[0]==-1){
               suffix_array[0]=0;
           }
-
+          //cout << "left right" <<endl;
+           //cout << in[i] <<endl;
         }else{
         if(!t_array[p-1]){
 
         //  cout << t_array[p-1] <<" ";
 
           char a = in[p-1];
-          //cout << a <<" ";
+        //  cout <<"char: " << a <<" " << p <<endl;
           int b = a;
           int index = arr[b];
           //cout <<p-1 << " " << i << " " << a << " " <<  index <<endl;
           //if(p==0){
           int index_head = copy_head_bucket[index];
+          //cout << index_head  <<" " <<copy_head_bucket[index] <<endl;
+
+          //cout << suffix_array[index_head] <<endl;
+          if(suffix_array[index_head]==-1){
           suffix_array[index_head] = p-1;
           copy_head_bucket[index]++;
+        }
           //break;
         //  cout <<a <<endl;
         //  cout << "head: " << copy_head_bucket[index] <<endl;
@@ -210,25 +223,27 @@ vector<bool> & bool_array,vector<int> & lms){
       }
     }
   }
+  /*
+  cout << "----------"<<endl;
   cout <<endl;
   cout << "new suffix_array left right" <<endl;
   for(int i=0;i<suffix_array.size();i++){
     cout << suffix_array[i] <<" ";
   }
   cout <<endl;
-
+*/
   /*
     Right-to-Left scanning
   */
   copy_end_bucket = end_bucket;
-  cout << "right to left " <<endl;
+  //cout << "right to left " <<endl;
   int end = suffix_array.size();
 	for(int i=end-1;i>=0;i--){
   //cout << suffix_array[i] << " ";
 
     int p = suffix_array[i];
     if(p==0){
-
+      // cout << in[i] <<endl;
     }else{
      if(t_array[p-1]){
        char a = in[p-1];
@@ -239,11 +254,11 @@ vector<bool> & bool_array,vector<int> & lms){
        //bool_array
         //suffix_array[i]
       //  cout << t_array[p-1] <<endl;
-       //cout << "end: " << copy_end_bucket[index] << " p: " << p-1 << endl;
+    //   cout << "end: " << copy_end_bucket[index] << " p: " << p-1 << endl;
        suffix_array[end_bucket_index]=p-1;
        copy_end_bucket[index]--;
 
-       //break;
+      // break;
        }
      }
     //cout << t_array[p-1] << " ";
@@ -254,19 +269,107 @@ vector<bool> & bool_array,vector<int> & lms){
      bool_array[i]=1;
    }
   }
-/*
+
   cout <<endl;
+
     cout << "new suffix_array right left" <<endl;
     for(int i=0;i<suffix_array.size();i++){
       cout << suffix_array[i] <<" ";
     }
+    cout <<endl;
+
     cout << "bool_array" <<endl;
     for(int i=0;i<bool_array.size();i++){
       cout << bool_array[i] <<" ";
     }
 
   cout <<endl;
+
+}
+bool compare_substrings(string one,string two){
+      if(one==two){
+        return true;
+      }
+      return false;
+}
+
+bool myfunction (int i,int j) { return (i<j); }
+
+void lms_named(vector<int> & suffix_array,vector<bool> & bool_array,
+string str,vector<int> & n_array,vector<int> & t_array){
+  int prev = suffix_array[0];
+  cout << "char in lms named" <<endl;
+  cout << str[prev] <<endl;
+  cout <<"suffix_array" <<endl;
+  for(int i=0;i<suffix_array.size();i++){
+    cout << suffix_array[i] << " ";
+  }
+  cout <<"bool_array" <<endl;
+  for(int i=0;i<suffix_array.size();i++){
+    cout << bool_array[i] << " ";
+  }
+  cout <<endl;
+  char str_prev = str[prev];
+  vector<int> sorted_positions;
+  vector<int> positions;
+  for(int i=0;i<suffix_array.size();i++){
+    if(bool_array[i]){
+      positions.push_back(suffix_array[i]);
+      sorted_positions.push_back(suffix_array[i]);
+    // cout << "from: " <<suffix_array[i] << " " << "to: " << prev << endl;
+    }
+  }
+  cout << "positions" <<endl;
+
+  std::sort (sorted_positions.begin(), sorted_positions.end(), myfunction);
+  vector<string> substrings(str.length(),"");
+  string cat ="";
+  for(int i=0;i<sorted_positions.size();i++){
+  //  cout << positions[i] << " ";
+    int from = sorted_positions[i];
+    int to = sorted_positions[i+1];
+    if(i+1==positions.size()){
+      to = sorted_positions[i] +1;
+    }
+    for(int i=from;i<to+1;i++){
+      cat+=str[i];
+    }
+    substrings[from]=cat;
+      cat="";
+  }
+ /*
+  cout << "substrings" <<endl;
+  for(int i=0;i<substrings.size();i++){
+    cout << i << " " <<substrings[i] << endl;
+
+  }
   */
+
+
+//  cout << "compare" <<endl;
+  int sum=0;
+  n_array[str.length()-1]=0;
+  for(int i=0;i<positions.size()-1;i++){
+       //cout << substrings[positions[i]] << " " << substrings[positions[i+1]] <<endl;
+      if(compare_substrings(substrings[positions[i]],substrings[positions[i+1]])){
+       n_array[positions[i+1]]=sum;
+      }else{
+        sum++;
+        n_array[positions[i+1]]=sum;
+      }
+
+  }
+  cout << "N array" <<endl;
+  for(int i=0;i<n_array.size();i++){
+    //cout << n_array[i] <<" ";
+    if(n_array[i]!=-1){
+      cout <<n_array[i] <<" ";
+       t_array.push_back(n_array[i]);
+    }
+  }
+  cout <<endl;
+
+  //cout <<endl;
 }
 int main(){
 	string in;
@@ -294,11 +397,31 @@ int main(){
 	vector<int> suffix_array(str_final.length(),-1);
   vector<bool>  bool_array(str_final.length(),0);
   vector<int> lms(str_final.length(),0);
+  vector<int> n_array(str_final.length(),-1);
+  vector<int> t1_array;
+  vector<int> s1_array;
   type_suffix_array(arr,t_array,str_final,suffix_array,end_bucket,
   lms);
+  /*
+  cout << "lms"<<endl;
+  for(int i=0;i<lms.size();i++){
+    cout << lms[i] <<" ";
+  }
+  cout << "t_array"<<endl;
+  for(int i=0;i<t_array.size();i++){
+    cout << t_array[i] <<" ";
+  }
+  cout <<endl;
+  */
 	induce_sort(arr,suffix_array,t_array,str_final,head_bucket,end_bucket,
   bool_array,lms);
 	cout <<endl;
+  lms_named(suffix_array,bool_array,str_final, n_array,t1_array);
+  vector<int> s1_array(t1_array.size(),-1);
+  cout << "t_array" <<endl;
+  for(int i=0;i<t1_array.size();i++){
+    cout << t1_array[i] << endl;
+  }
 
 	return 0;
 }
