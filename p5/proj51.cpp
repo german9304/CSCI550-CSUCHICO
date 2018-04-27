@@ -75,10 +75,6 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 			}
 		}
 	}
-  for(int i=0;i< suffix_array.size(); i++){
-    cout << suffix_array[i] << " ";
-  }
-  cout <<endl;
 }
 void induce_sort(int arr[],vector<int> & suffix_array,vector<int> & t_array,
 string in,vector<int> & head_bucket,vector<int> & end_bucket,
@@ -196,34 +192,172 @@ string str,vector<int> & n_array,vector<int> & t1_array){
   }
 }
 
-void SAIS(int size, vector<int> & t1, vector<int> & s1, int alphsize)
+void rename_string_int(int arr[], string in,vector<int> & T,
+  int & alphsize)
 {
-
-
-   if(size==-1){
-     return;
-   }
-  // cout << size <<endl;
-  if(s1[t1[size]]==-1){
-    s1[t1[size]]=size;
-    //cout  << size << " "  << endl;
-  }
-  /*else{
-    for(int i=0;i<s1.size();i++){
-      cout << s1[i] << " ";
-    }
-    cout <<endl;
-
-    cout << "not -1 val: " << s1[t1[size]] << " index: " << t1[size] << endl;
-  //  break;
-  size=0;
-  }
+  	for(int i=0;i<in.length();i++){
+			int a = in[i];
+			arr[a]++;
+		}
+		int rename_index=1;
+		for(int i=0;i<256;i++){
+			if(arr[i]>0){
+				arr[i] = rename_index;
+				rename_index++;
+				alphsize++;
+			}
+		}
+		alphsize++;
+	//	cout <<"alphsize: " <<  alphsize <<endl;
+		for(int i=0;i<in.length();i++){
+			  char a = in[i];
+				int b = a;
+        T[i] = arr[b];
+		}
+		int m_last = T.size()-1;
+		T[m_last]=0;
+		/*
+		for(int i=0;i<T.size();i++){
+			cout << T[i] << " ";
+		}
+		*/
+}
+void arrays_A_C_B(vector<int> & T, vector<int> & A, vector<int> & B,
+   vector<int> & C)
+{
+	/*
+	 	2 2 1 4 4 1 4 4 1 1 3 3 1 1 0
+	 */
+	 for(int i=0;i<T.size();i++){
+		 int index = T[i];
+		 A[index]++;
+	 }
+	 /*
+	 cout << "Array A" <<endl;
+	 for(int i=0;i<A.size();i++){
+		 cout << A[i] <<" ";
+	 }
+	 */
+	// cout <<endl;
+	 //1 6 2 2 4
+	 for(int i=1;i<A.size();i++){
+		 C[i] = C[i-1] + A[i-1];
+	 }
+	 /*
+	 cout << "Array C" <<endl;
+	 for(int i=0;i<C.size();i++){
+		 cout << C[i] <<" ";
+	 }
+	 */
+	// cout <<endl;
+	 for(int i=1;i<B.size();i++){
+		 B[i] = B[i-1] + A[i];
+	 }
+	 /*
+	 cout <<endl;
+	 cout << "Array B" <<endl;
+ 	 for(int i=0;i<B.size();i++){
+ 		 cout << B[i] <<" ";
+ 	 }
+	 cout <<endl;
   */
-    //int index =
+}
+void array_t_calc(vector<int> & T, vector<int> & t, vector<int> & SA,
+	vector<int> & B){
+  vector<int> c_b = B;
+  int end = T.size()-1;
+	t[end]=1;
+	// L type is 0
+	// S tyoe is 1
+		/*
+		If T[i+1] >  T[i]
+				t[i] is L type
 
-   SAIS(size-1,t1,s1,alphsize);
-   //cout <<  s1[t1[size]] <<" ";
+				0 6 8 10 14
+		*/
+	for(int i = end-1;i >= 0; i--){
+      if(T[i] > T[i+1]){
+         t[i] = 0;
+				 if(T[i+1] == 0 && i+1 == end){
+					   SA[c_b[i]] = i + 1;
+             c_b[i]--;
+				 }else if(t[i+1] == 1){
+           SA[c_b[T[i+1]]] = i + 1;
+					 c_b[T[i+1]]--;
+				 }
+				 //break;
+				/*
+				If T[i+1] <  T[i]
+						t[i] is S type
+				*/
+			}else if(T[i] < T[i+1]){
+        t[i] = 1;
+			}else{
+				if(T[i] == T[i + 1]){
+					/*
+					If T[i+1] == T[i]
+					    If T[i+1] its L type
+							then t[i] is also L type
+							else
+							t[i] is S type
+					*/
+            if(t[i+1] == 0){
+							t[i] = 0;
+						}else{
+							t[i] = 1;
+						}
+					//	cout <<endl;
+				}
+			}
+	}
+	/*
+	cout << " T type L is 0 , S is 1 " <<endl;
+	for(int i = 0 ; i < t.size() ; i++ ){
+		cout << t[i] << " ";
+	}
+	cout <<endl;
 
+		cout << " SA " <<endl;
+		for(int i = 0 ; i < SA.size() ; i++ ){
+			cout << SA[i] << " ";
+		}
+		cout <<endl;
+	*/
+
+}
+void induce_sort_suffixes(vector<int> & SA, vector<int> & B){
+     /*
+		 Left-Right SA scanning
+		 */
+		 for(int i = 0; i < SA.size(); i++){
+
+		 }
+	   /*
+		 Right-Left SA scanning
+	   */
+		 int end = SA.size()-1;
+		 for(int i = end;i>=0; i--){
+
+		 }
+
+}
+
+void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
+{
+	cout << "Iteration " << iter << endl;
+	cout << "T at iteration " << iter << endl;
+	 for(int i = 0; i < T.size(); i++)
+	     cout << T[i] << " " ;
+	cout << endl;
+	vector<int> A(alphabetSize, 0); // Occurrances of characters
+	vector<int> C(alphabetSize, 0); // characters smaller than c, head bucket
+	vector<int> B(alphabetSize, 0); // End of bucket
+	int size = T.size();
+	vector<int> t(size, 0);
+  arrays_A_C_B(T, A, B, C);
+	array_t_calc(T, t, SA, B);
+	vector<int> head_c = C;
+  induce_sort_suffixes(SA, head_c);
 }
 
 int main(){
@@ -231,11 +365,18 @@ int main(){
 	string cat;
 	getline (cin, in);
 	while(!cin.eof()){
-	cat+=in;
+	cat += in;
 	getline(cin, in);
   }
 	int str_length= cat.length();
   int arr[256]={0};
+	vector<int> T(str_length+1, -1);
+	vector<int> SA(str_length+1, -1);
+	int alphsize = 0;
+	int iter = 1;
+  rename_string_int(arr, cat, T,alphsize);
+	SAIS(T, SA, alphsize, iter);
+	/*
 	vector<int> newinteger;
 	vector<int> occurances;
 	vector<int> head_bucket;
@@ -243,12 +384,12 @@ int main(){
 	vector<int> t_array(str_length+1,-1);
 	count(arr,str_length,cat,newinteger,occurances,head_bucket
 	,end_bucket);
-  /*
+
   for(int i=0;i<occurances.size();i++){
     cout << occurances[i] << " ";
   }
   cout <<endl;
-  */
+
 	string str_final = 	cat+="$";
 	vector<int> suffix_array(str_final.length(),-1);
   vector<bool>  bool_array(str_final.length(),0);
@@ -271,6 +412,8 @@ int main(){
     cout << t1_array[i] << " ";
   }
   cout <<endl;
+	vector<int> T;
+	vector<int> SA(in.size())
 
   /*
   cout <<endl;
@@ -289,6 +432,7 @@ int main(){
         }
   }
   */
+	/*
   cout <<endl;
   cout << "SA1 array" <<endl;
     int t_size = t1_array.size()-1;
@@ -298,5 +442,8 @@ int main(){
           }
 
   cout <<endl;
+	*/
+	//SAIS(T,SA,alphsize);
+
 	return 0;
 }
