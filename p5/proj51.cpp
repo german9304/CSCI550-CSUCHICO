@@ -701,7 +701,7 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
                 p = T.size();
                 //cout <<"t: p-1 " <<  t[p-1] <<endl;
               }else if(p-1==-2){
-                 p = T.size();
+                 p = T.size()-1;
                 // cout <<"t: p-2 " <<  t[p-1] <<endl;
               }
 
@@ -730,7 +730,7 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
   for(int i = 0; i < SA.size(); i++)
      cout << SA[i] << " " ;
   cout << endl;
-  */
+*/
 }
 
 int main(){
