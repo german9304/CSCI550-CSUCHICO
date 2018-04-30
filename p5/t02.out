@@ -1,7 +1,34 @@
-11 2 6 9 -1 -1 -1 -1 -1 -1 -1 -1 
+Iteration 1
+T at iteration 1
+5 4 1 3 6 7 1 5 2 1 7 0 
+LMS prefixes are sorted.
+SA at iteration 1
+11 2 6 9 8 3 1 7 0 4 10 5 
 
-T1 array 
+T1 at iteration 1
 1 2 3 0 
+Iteration 1. Recursive call on T1. 
+********************************************
+Iteration 2
+T at iteration 2
+1 2 3 0 
+T1 at inside iteration 2
 
-SA1 array
+
+********************************************
+After recursive call inside iteration 2
+lms after recursive call
+
+T1 array
+2 6 9 11 
+SA1 at iteration 2 (after recursive call) is:
 3 0 1 2 
+ i: 3  i: 2  i: 1  i: 0 
+head bucket
+0 1 4 5 6 7 9 10 
+end bucket
+0 3 4 5 6 8 9 11 
+SA_ Copy
+11 2 6 9 8 3 1 7 0 4 10 5 
+SA at the end of SAIS function just before the return at iteration 2
+11 2 6 9 8 3 1 7 0 4 10 5 

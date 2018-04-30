@@ -75,6 +75,8 @@ void type_suffix_array(int arr[],vector<int> & type_suffix,string in,
 			}
 		}
 	}
+  cout<<endl;
+  cout << "suffix_array" <<endl;
   for(int i=0;i< suffix_array.size(); i++){
     cout << suffix_array[i] << " ";
   }
@@ -111,7 +113,11 @@ vector<bool> & bool_array,vector<int> & lms){
       }
     }
   }
-
+  
+   cout << "SA ARRAY" <<endl;
+   for(int i=0;i < suffix_array.size() ; i ++){
+       cout << suffix_array[i] << " ";
+   }
   /*
     Right-to-Left scanning
   */
