@@ -282,16 +282,16 @@ void array_t_calc(vector<int> & T, vector<int> & t, vector<int> & SA,
          t[i] = 0;
 				 if(T[i+1] == 0 && i+1 == end){
 					   SA[0] = i + 1;
-            // cout << "sa: end_b " << c_b[i] << " " << i <<endl;
+          //  cout << "sa: end_b " << c_b[i] << " " << i <<endl;
              lms[end]=1;
-             c_b[i]--;
+             //c_b[i]--;
 				 }else if(t[i+1] == 1){
            SA[c_b[T[i+1]]] = i + 1;
-          // lms[SA[c_b[T[i+1]]]]=1;
+           //lms[SA[c_b[T[i+1]]]]=1;
            lms[i+1]=1;
-           if(c_b[T[i+1]]!=0){
+          // if(c_b[T[i+1]]!=0){
 					 c_b[T[i+1]]--;
-           }
+           //}
 				 }
 				 //break;
 				/*
@@ -311,7 +311,7 @@ void array_t_calc(vector<int> & T, vector<int> & t, vector<int> & SA,
 					*/
             if(t[i+1] == 0){
 							t[i] = 0;
-						}else{
+						}else if(t[i+1] == 1){
 							t[i] = 1;
 						}
 					//	cout <<endl;
@@ -360,7 +360,7 @@ void array_t_calc(vector<int> & T, vector<int> & t, vector<int> & SA,
 }
 void induce_sort_suffixes(vector<int> & SA, vector<int> & B,
     vector<int> & t, vector<int> & T, vector<int> & end_c){
-  //  vector<int> c_b = B;
+    vector<int> c_b = B;
      /*
 		 Left-Right SA scanning
 		 */
@@ -369,7 +369,7 @@ void induce_sort_suffixes(vector<int> & SA, vector<int> & B,
         // cout << "left right : " << p  <<endl;
         if(p!=-1){
           if(p==0){
-            //cout << "'Its 0"<<endl;
+
           }else{
             if(!t[p-1]){
               SA[B[T[p-1]]]= p-1;
@@ -394,6 +394,7 @@ void induce_sort_suffixes(vector<int> & SA, vector<int> & B,
        int p = SA[i];
         //if(p!=-1){
       //  cout <<"p: " <<  p << " "<< t[p-1]  << endl;
+      /*
             if(p-1==-1){
               p = T.size();
               //cout <<"t: p-1 " <<  t[p-1] <<endl;
@@ -401,21 +402,18 @@ void induce_sort_suffixes(vector<int> & SA, vector<int> & B,
                p = T.size()-1;
               // cout <<"t: p-2 " <<  t[p-1] <<endl;
             }
-
-            if(t[p-1]){
-              //cout <<"p: " <<  p <<endl;
-              SA[end_c[T[p-1]]]= p-1;
+*/
+        if(p>0){
+          if(t[p-1]){
+            //cout <<"p: " <<  p <<endl;
+            SA[end_c[T[p-1]]]= p-1;
             // /  cout <<"end: inside " <<    end_c[T[p-1]] <<endl;
-            if(end_c[T[p-1]]!=0){
+          //  if(end_c[T[p-1]]!=0){
               end_c[T[p-1]]--;
-            }
-            }else{
-              //SA[end_c[T[p-1]] = p-1;
-              //cout << "end: not S " << "p-1: " << p-1 << " end: " << end_c[T[p-1]]<<endl;
-              //if(end_c[T[p-1]]>0){
-              //end_c[T[p-1]]--;
             //}
-            }
+
+          }
+        }
       //  }
 		 }
      /*
@@ -435,15 +433,15 @@ void bit_bool_array(vector<int> & lms, vector<int> & l, vector<int> & SA){
   }
   */
 //  cout <<"size: "<<  lms.size() << " " << SA.size() <<endl;
-  cout <<endl;
-    for(int i = 0;i < SA.size(); i++){
-      //cout <<"lms in: " <<  SA[i] << " " <<endl;
-      if(SA[i]!=-1){
-      if(lms[SA[i]]==1){
-        l[i] = 1;
+//  cout <<endl;
+      for(int i = 0;i < SA.size(); i++){
+        //cout <<"lms in: " <<  SA[i] << " " <<endl;
+        if(SA[i]!=-1){
+          if(lms[SA[i]]){
+            l[i] = 1;
+          }
+        }
       }
-     }
-    }
 /*
     cout << "lms array"<<endl;
     for(int i = 0;i < lms.size(); i++){
@@ -462,8 +460,6 @@ void bit_bool_array(vector<int> & lms, vector<int> & l, vector<int> & SA){
 bool cmpr_sbstrs(vector<int> & T, vector<int> & t, int prev, int next,vector<int> & lms){
    //cout <<prev << " " << next <<endl;
    vector<int> str1;
-   int str1c=0;
-   int str2c=0;
    vector<int> str2;
   // str1.push_back(prev);
    for(int i = prev;i < t.size(); i++){
@@ -513,7 +509,7 @@ bool cmpr_sbstrs(vector<int> & T, vector<int> & t, int prev, int next,vector<int
          for(int i=0; i<str1.size();i++){
              if(str1[i]!=str2[i]){
                str2.clear();
-                str1.clear();
+               str1.clear();
                 //cout << "different" <<endl;
                 return false;
              }
@@ -522,7 +518,7 @@ bool cmpr_sbstrs(vector<int> & T, vector<int> & t, int prev, int next,vector<int
      }
     // cout << "same " <<endl;
      str2.clear();
-      str1.clear();
+     str1.clear();
      return true;
 }
 void n_array_calc(vector<int> & N, vector<int> & SA, vector<int> & l,
@@ -621,11 +617,9 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
   cout << "Iteration " << iter << ". Recursive call on T1."
 <<" \n********************************************" << endl;
   vector<int> SA1(T1.size(), -1);
-  iter++;
-  SAIS(T1, SA1, largest + 1, iter);
+  SAIS(T1, SA1, largest + 1, iter+1);
   cout << "\n********************************************"
 << "\nAfter recursive call inside iteration " << iter << endl;
-  cout << "lms after recursive call" <<endl;
   T1.clear();
  for(int i = 0 ; i <lms.size() ; i++){
         if(lms[i]){
@@ -633,7 +627,7 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
         }
       //cout << lms[i] <<" ";
     }
-    cout <<endl;
+    //cout <<endl;
     /*
       cout << "T1 array" <<endl;
      for(int i = 0 ; i <T1.size() ; i++){
@@ -657,9 +651,9 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
       SA_c[copy_end_b[T[T1[p]]]] = T1[p];
   //  cout <<" i: " <<  copy_end_b[T[T1[p]]] << " ";
     new_lms[copy_end_b[T[T1[p]]]]=1;
-      if(copy_end_b[T[T1[p]]]!=0){
+    //  if(copy_end_b[T[T1[p]]]!=0){
       copy_end_b[T[T1[p]]]--;
-      }
+      //}
     }
     /*
     cout <<endl;
@@ -697,6 +691,7 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
         int end_i = SA_c.size()-1;
         for(int i = end_i ;i>=0; i--){
           int p = SA_c[i];
+          /*
               if(p-1==-1){
                 p = T.size();
                 //cout <<"t: p-1 " <<  t[p-1] <<endl;
@@ -704,17 +699,25 @@ void SAIS(vector<int> & T, vector<int> & SA, int alphabetSize,int iter)
                  p = T.size()-1;
                 // cout <<"t: p-2 " <<  t[p-1] <<endl;
               }
-
+              */
+         if(p>0){
           if(t[p-1]){
             SA_c[copy2_endb[T[p-1]]]= p-1;
               copy2_endb[T[p-1]]--;
           }
         }
+        }
+/*
 
-        cout <<endl;
+  SA[end_c[T[p-1]]]= p-1;
+  // /  cout <<"end: inside " <<    end_c[T[p-1]] <<endl;
+//  if(end_c[T[p-1]]!=0){
+    end_c[T[p-1]]--;
+    */
+      //  cout <<endl;
         cout << "SA_ Copy"<<endl;
         for(int i = 0; i < SA_c.size();i++){
-          cout << SA_c[i] << " ";
+          cout << SA_c[i]<< " ";
         }
         cout <<endl;
       /*
